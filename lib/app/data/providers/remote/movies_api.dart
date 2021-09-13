@@ -11,7 +11,7 @@ class MoviesApi {
         await _dio.get('/movie/top_rated', queryParameters: {
       "api_key": Constants.THE_MOVIE_DB_API_KEY,
       "language": 'es-ES',
-      "region": 'es-ES'
+      // "region": 'es-ES'
     });
 
     return (response.data['results'] as List)
